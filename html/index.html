@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Nicolas BENOIT</title>
 </head>
+
 <body>
     <header>
-
+        <h1>Facture</h1>
     </header>
-    <main>
-        
+    <form action="">
+        <div id="entrep">
+
+            <!-- Nom du client -->
+            <label for="invoiceFor">Facturé par :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- adresse de l'entreprise -->
+            <label for="invoiceFor">Mon adresse :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- adresse mail de l'entrprise -->
+            <label for="invoiceFor">mail :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- SIRET -->
+            <label for="invoiceFor">SIRET :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- N° de facture -->
+            <label for="invoiceFor">N° de facture :</label>
+            <input name="invoiceFor" type="text">
+
+        </div>
+
+
+        <div id="client">
+
+            <!-- Nom du client -->
+            <label for="invoiceFor">Facturé à :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- adresse de l'entreprise -->
+            <label for="invoiceFor">adresse de l'entreprise :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- adresse mail de l'entrprise -->
+            <label for="invoiceFor">mail :</label>
+            <input name="invoiceFor" type="text">
+
+            <!-- SIRET -->
+            <label for="invoiceFor">SIRET :</label>
+            <input name="invoiceFor" type="text">
+
+        </div>
+    </form>
+
+
+    <result>
+        <h2>Resultats : </h2>
+    </result>
+
+
+
+    <button id="pdf" type="button">Save PDF</button>
     </main>
     <footer>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>

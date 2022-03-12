@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* width: 100%; */
+}
+
+html, body {
+    background-color: grey;
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+}
+
+
+form #entrep {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+form #entrep label{
+    margin: 5px;
+}
+
+form #entrep input[type="text"]{
+    border: 1px solid;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgba(red, green, blue, 0.2);
+}
+
+
+
+form #client {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+form #client label{
+    margin: 5px;
+}
+
+form #client input[type="text"]{
+    border: 1px solid;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgba(red, green, blue, 0.2);
+}
