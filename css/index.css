@@ -11,10 +11,17 @@ html, body {
 }
 
 
+header {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
 form {
     display: flex;
     flex-direction: row;
     width: 50vw;
+    top: 0;
 }
 
 
@@ -23,10 +30,15 @@ form #entrep {
     top: 0;
     left: 0;
     width: 100%;
+    margin: 30px;
     padding: 30px 100px;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 
@@ -48,10 +60,15 @@ form #client {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    margin: 30px;
+    padding: 30px;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 
