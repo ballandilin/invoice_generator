@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Nicolas BENOIT</title>
 </head>
 
@@ -15,74 +15,85 @@
     </header>
     <form action="">
         <div id="entrep">
-
             <!-- Nom du client -->
-            <label for="invoiceFor">Facturé par :</label>
-            <input name="invoiceFor" type="text">
+            <label for="invoiceBy">Facturé par :</label>
+            <input name="invoiceBy" type="text">
 
             <!-- adresse de l'entreprise -->
-            <label for="invoiceFor">Mon adresse :</label>
-            <input name="invoiceFor" type="text">
+            <label for="addrEntrep">Mon adresse :</label>
+            <input name="addrEntrep" type="text">
 
             <!-- adresse mail de l'entrprise -->
-            <label for="invoiceFor">mail :</label>
-            <input name="invoiceFor" type="text">
+            <label for="mailEntrep">mail :</label>
+            <input name="mailEntrep" type="text">
 
             <!-- SIRET -->
-            <label for="invoiceFor">SIRET :</label>
-            <input name="invoiceFor" type="text">
+            <label for="SIRETEntrep">SIRET :</label>
+            <input name="SIRETEntrep" type="text">
 
             <!-- N° de facture -->
-            <label for="invoiceFor">N° de facture :</label>
-            <input name="invoiceFor" type="text">
-
+            <label for="invoiceNb">N° de facture :</label>
+            <input name="invoiceNb" type="text">
         </div>
 
 
         <div id="client">
-
             <!-- Nom du client -->
             <label for="invoiceFor">Facturé à :</label>
             <input name="invoiceFor" type="text">
 
             <!-- adresse de l'entreprise -->
-            <label for="invoiceFor">adresse de l'entreprise :</label>
-            <input name="invoiceFor" type="text">
+            <label for="addrClient">adresse de l'entreprise :</label>
+            <input name="addrClient" type="text">
 
             <!-- adresse mail de l'entrprise -->
-            <label for="invoiceFor">mail :</label>
-            <input name="invoiceFor" type="text">
+            <label for="mailClient">mail :</label>
+            <input name="mailClient" type="text">
 
             <!-- SIRET -->
-            <label for="invoiceFor">SIRET :</label>
-            <input name="invoiceFor" type="text">
-
+            <label for="SIRETClient">SIRET :</label>
+            <input name="SIRETClient" type="text">
         </div>
 
 
         <div id="payement">
-            <!-- Nom du client -->
-            <label for="invoiceFor">Facturé à :</label>
-            <input name="invoiceFor" type="text">
+            <label for="Article">Article/description :</label>
+            <input name="Article" type="text">
 
-            <!-- adresse de l'entreprise -->
-            <label for="invoiceFor">adresse de l'entreprise :</label>
-            <input name="invoiceFor" type="text">
+            <label for="quantite">quantite :</label>
+            <input name="quantite" type="text">
 
-            <!-- adresse mail de l'entrprise -->
-            <label for="invoiceFor">mail :</label>
-            <input name="invoiceFor" type="text">
+            <label for="prixUniHT">prix unitaire HT :</label>
+            <input name="prixUniHT" type="text">
 
-            <!-- SIRET -->
-            <label for="invoiceFor">SIRET :</label>
-            <input name="invoiceFor" type="text">
+            <label for="total">TOTAL :</label>
+            <input name="total" type="text">
         </div>
+
+
     </form>
 
 
-    <result>
-        <h2>Resultats : </h2>
-    </result>
+    <div id="iban">
+        <table>
+            <thead>
+                <tr>
+                    <th>Code banque</th>
+                    <th>Code guichet<br></th>
+                    <th>N° du compte<br></th>
+                    <th>Cle RIB<br></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="container">
+                    <td><input type="text" name="codeBanque" id="codeBanque" maxlength="5" placeholder="XXXXX"></td>
+                    <td><input type="text" name="codeGuichet" id="codeGuichet" maxlength="5" placeholder="XXXXX"></td>
+                    <td><input type="text" name="NCompte" id="NCompte" maxlength="11" placeholder="XXXXXXXXXXX"></td>
+                    <td><input type="text" name="CleRIB" id="CleRIB" maxlength="2" placeholder="XX"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
 
@@ -93,6 +104,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/js/rib.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

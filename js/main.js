@@ -1,5 +1,5 @@
 window.onload = () => {
-    console.log("onload");
+    console.log("load main");
 
     function genPDF() {
         const doc = new jspdf.jsPDF({
